@@ -1,0 +1,129 @@
+<head>
+        <style>
+             body{
+background-color:lightslategray;
+    }
+    @media only screen and (orientation: landscape) {
+          body {
+            background-color: #E6E6FA;
+          }
+        }
+                .button {
+                  background-color: #008CBA;
+                  border: none;
+                  color: white;
+                  padding: 5px 15px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                }
+                .button2{
+                    background-color: #f44336;
+                  border: none;
+                  color: white;
+                  padding: 5px 15px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  cursor: pointer;
+                }
+                </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            //nameoncard
+            $(document).ready(function () {
+                    $("#defaultContactFormNameoncard").change(function () {
+                        var options = $('#defaultContactFormNameoncard').val();
+                        localStorage.setItem("defaultContactFormNameoncard",options);
+                        console.log(options)
+                    });
+                });
+            //firstname
+            $(document).ready(function () {
+                    $("#defaultContactFormFirstname").change(function () {
+                        var options = $('#defaultContactFormFirstname').val();
+                        localStorage.setItem("defaultContactFormFirstname",options);
+                        console.log(options)
+                    });
+                });
+            //Surname
+            $(document).ready(function () {
+                    $("#defaultContactFormSurname").change(function () {
+                        var options = $('#defaultContactFormSurname').val();
+                        localStorage.setItem("defaultContactFormSurname",options);
+                        console.log(options)
+                    });
+                });
+            //email
+            $(document).ready(function () {
+                    $("#defaultContactFormEmail").change(function () {
+                        var options = $('#defaultContactFormEmail').val();
+                        localStorage.setItem("defaultContactFormEmail",options);
+                        console.log(options)
+                    });
+                });
+            //gender
+                $(document).ready(function () {
+                    $("#gender").change(function () {
+                        var options = $('#gender').val();
+                        localStorage.setItem("gender",options);
+                        console.log(options)
+                    });
+                });
+            //checkbox
+                $(document).ready(function () {
+                    $("#defaultContactFormCopy").change(function () {
+                        var options = $('#defaultContactFormCopy').val();
+                        localStorage.setItem("defaultContactFormCopy",options);
+                        console.log(options)
+                    });
+                });
+                </script>
+                </head>
+                <body bgcolor="#E6E6FA">
+    <div id="container" style="margin-left:540px ">
+            <form class="text-center border border-light p-5" style=" margin-right:540px;">
+            <p>Enter Your Payment Details</p>
+        
+            <!-- Name on card -->
+            <label>Name on card:</label>
+            <input type="text" id="defaultContactFormNameoncard" class="form-control mb-4">
+            <br>
+            <!-- firstname -->
+            <label>FirstName:</label>
+            <input type="text" id="defaultContactFormFirstname" class="form-control mb-4" placeholder="FirstName">
+            <br>
+            <!--surname-->
+            <label>Surname:</label>
+            <input type="text" id="defaultContactFormSurname" class="form-control mb-4" placeholder="Surname">
+            <br>
+            <!-- Email -->
+            <label>E-Mail:</label>
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <br>
+            <!-- Subject -->
+            <label>Gender</label>
+            <select class="browser-default custom-select mb-4" id="gender">
+                <option value="">Choose Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        
+           
+        
+            <!-- Copy message -->
+            <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+            </div>
+
+        </form>
+        <button class="button2" onclick="window.location.href = 'seating.html';">Cancel</button>
+        <button class="button">Pay Now and Book</button>
+                </body>

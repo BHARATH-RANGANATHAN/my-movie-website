@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+    .button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    body{
+background-color:lightslategray;
+    }
+    @media only screen and (orientation: landscape) {
+          body {
+            background-color: #E6E6FA;
+          }
+        }
+    img{width:150px;
+        height:250px;}
+    </style>
+</head>
+<body>
+<center><h2>SHOWTIMES AT MOVIES @ DUNDRUM</h2></center>
+<div class="container">
+<button id="btnLoadMovies">Load Movies</button>
+<table class='table'>
+<tr>
+<th>Movies</th>
+<th>Details</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
+<th>Sun</th>
+</tr>
+        </thead>
+        <tbody id="movieListingBody">
+
+
+        </tbody>
+
+        
+        </table>
+
+        <button class="button" style="float:right" onclick="window.location.href = 'tickets.html';">Proceed To Tickets</button>
+       
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
